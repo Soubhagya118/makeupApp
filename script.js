@@ -9,10 +9,10 @@ const swiper = new Swiper('.swiper-container', {
   
 
 
-// Get all "Add to Cart" buttons
+// all "Add to Cart" buttons
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
-// Add click event listener to each "Add to Cart" button
+//"Add to Cart" button
 addToCartButtons.forEach(button => {
   button.addEventListener('click', addToCart);
 });
@@ -22,8 +22,7 @@ function addToCart(event) {
   const product = event.target.parentElement;
   const productName = product.querySelector('h3').textContent;
   
-  // You can customize this function to add the selected product to the cart
-  // For now, we will just log the product name to the console
+  
   console.log(`Added ${productName} to the cart`);
 }
 // =====================================slider======================================
